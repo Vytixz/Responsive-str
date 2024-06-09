@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    background-color:#333;
+    color: white;
+    gap: 1rem;
+   
+
+}
+body{
+   background: #333;
+   font-family: "Poppins", sans-serif;
+}
+main .leading{
+    background: url(mushroom-8215265_1280.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+    padding: 1rem;
+    text-shadow: 0 0 1rem black;
+    flex-direction: column;
+}
+main .leading-bigtext{
+    font-size: 7rem;
+}
+main .leading-samlltext{
+    font-size: 1.5rem;
+}
+main .art{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+        padding: 1rem;
+
+}
+main .art img{
+    width: 100%;
+    height: auto;
+}
+main .art article p{
+    position: absolute;
+    padding: 0.5rem;
+    width: 100%;
+    bottom: 0.42rem;
+    background-color: rgb(0, 0, 0, 0.6);
+    color: white;
+}
+main .art article{
+position: relative;
+}
+
+@media  screen and (min-width: 640px) {
+    main .leading{
+        flex-direction: row;
+    }
+    main .leading-bigtext{
+        font-size: 5rem;
+    }
+    main .leading-smalltetx{
+        font-size: 1.5rem;
+    }
+    main .art{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        gap: 0.5rem;
+        margin-top: 0.25rem;
+        padding: 1.5rem; 
+    }
+    
+}
+@media screen and (min-width: 1250px){
+    main .art{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        gap: 1rem;
+        margin-top: 0.5rem;
+        padding: 3rem;
+    }
+    
+}
